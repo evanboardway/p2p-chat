@@ -47,7 +47,6 @@
   "dependencies": {
     "@joeattardi/emoji-button": "^4.6.0",
     "electron-squirrel-startup": "^1.0.0",
-    "emoji-picker-element": "^1.4.0",
     "jquery": "^3.6.0"
   },
   "devDependencies": {
