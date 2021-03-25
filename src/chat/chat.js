@@ -1,11 +1,4 @@
 const { ipcRenderer } = require('electron');
-window.$ = window.jQuery = require('jquery');
-// $(window).keydown(function (event) {
-//     if (event.keyCode == 13) {
-//         event.preventDefault();
-//         return false;
-//     }
-// });
 
 const chatWrapper = document.getElementById('chat-wrapper');
 const messageWrapper = document.getElementById('message-wrapper');
