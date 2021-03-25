@@ -2,7 +2,7 @@ const { app } = require('electron');
 const net = require('net');
 const { Client } =  require('./client.js');
 
-const PORT = 6666;
+const PORT = 6978;
 const HOST = 'localhost';
 
 async function joinSession(window) {

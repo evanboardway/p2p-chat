@@ -21,7 +21,7 @@ const createWindow = async () => {
   });
 
   mainWindow.loadFile(path.join(__dirname, '/chat/chat.html'));
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // INIT CONNECTION THEN LOAD UPON SUCCESS
   tcpHandler.joinSession(mainWindow).then((client) => {
