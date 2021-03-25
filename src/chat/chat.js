@@ -1,4 +1,6 @@
 const { ipcRenderer } = require('electron');
+window.$ = window.jQuery = require('jquery');
+
 
 const chatWrapper = document.getElementById('chat-wrapper');
 const messageWrapper = document.getElementById('message-wrapper');
