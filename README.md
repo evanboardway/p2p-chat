@@ -1,6 +1,6 @@
 # P2P Chat ... well, kind of...
 
-A peer to peer messaging conecept built with electron.
+A peer to peer messaging conecept built with electron. Real peer to peer doesn’t work with clients behind a NAT unless there’s some port forwarding. I could have attempted to hole punch, but it’s unreliable and complicated. This app only actually works on localhost.
 
 ## Start
 
