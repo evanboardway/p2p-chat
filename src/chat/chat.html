@@ -8,14 +8,15 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<header class="background h-10 flex flex-row items-center justify-evenly w-full shadow-sm">
+<header id="head" class="hidden background h-10 flex flex-row items-center justify-evenly w-full shadow-sm">
   <h1>P2P CHAT</h1>
 </header>
 
 <body class="background">
 
-  <div id="chat-wrapper" class="flex flex-col justify-center items-center">
-    <h1>LOADING</h1>
+  <div id="chat-wrapper" class="flex flex-col justify-center items-center h-screen">
+    <h1>Waiting for peer to connect...</h1>
+    <div class="loader m-2"></div>
   </div>
 
   <div id="message-wrapper" class="hidden">
@@ -23,10 +24,10 @@
   </div>
 
   <div id="textbox" class="hidden overlay-80 w-full shadow-lg overlay-10">
-    <emoji-picker id="emoji-picker" class="hidden light"></emoji-picker>
+    <div id="emoji-box" class="hidden flex flex-row flex-wrap justify-evenly"></div>
     <hr>
     <div class="flex flex-row">
-      <button id="emoji-button" class="px-2 text-xl align-middle text-center">&#128526;</button>
+      <button id="emoji-button" class="px-2 text-xl align-middle text-center">😀</button>
       <form id="message-form" class="flex flex-row flex-grow justify-between p-2">
         <input type="text" name="raw-message" id="text-input"
           class="no-border overlay-20 flex flex-grow text-gray-500 px-2 rounded-full" />
@@ -40,7 +41,6 @@
   </div>
 </body>
 
-<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script> -->
 <script src="./chat.js"></script>
 
 </html>
