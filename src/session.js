@@ -1,8 +1,6 @@
 const { app } = require('electron');
 const net = require('net');
 const { Client } =  require('./client.js');
-// const clientProcess = fork('./src/session/client.js');
-
 
 const PORT = 6666;
 const HOST = 'localhost';
@@ -21,7 +19,6 @@ async function joinSession(window) {
             const cli = new Client(socket, window);
             resolve(cli);
             
-            // spawn new instance of client on a new thread.
         })
         socket.on('error', () => {
             console.log('FAILED TO CONNECT TO SESSION... CREATING ONE');
@@ -40,7 +37,6 @@ async function joinSession(window) {
                 console.log("CONNECTED");
                 socket.on('data', (data) => {
                     window.webContents.send('inbound-message', data.toString());
-
                 });
                 const cli = new Client(socket, window);
                 resolve(cli);

@@ -27,6 +27,13 @@ const createWindow = async () => {
   tcpHandler.joinSession(mainWindow).then((client) => {
     // send message to template to load chat.
     this.client = client;
+    
+    // Restart app on client disconnect.
+    this.client.getSocket().on('end', () => {
+      app.relaunch();
+      app.exit();
+    });
+
     mainWindow.webContents.send('ready');
     mainWindow.webContents.on('did-finish-load', ()=>{
       mainWindow.webContents.send('ready');
@@ -36,7 +43,6 @@ const createWindow = async () => {
   }
 
 };
-
 
 app.on('ready', createWindow);
 

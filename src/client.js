@@ -12,6 +12,10 @@ class Client {
         this.socket.write(message);
     }
 
+    getSocket() {
+        return this.socket;
+    }
+
 
 }
 
