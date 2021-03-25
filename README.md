@@ -4,7 +4,8 @@ A peer to peer messaging conecept built with electron. Real peer to peer doesnâ€
 
 ## Start
 
-Run this project with npm start
+Make sure that your node is updated to the latest version and run the client with `npm start`. This will open one instance of the application and wait for another one to be opened.
+
 
 ## Images
 
