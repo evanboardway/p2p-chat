@@ -6,6 +6,8 @@ A peer to peer messaging conecept built with electron. Real peer to peer doesnâ€
 
 Make sure that your node is updated to the latest version and run the client with `npm start`. This will open one instance of the application and wait for another one to be opened.
 
+In the case that the default port is already in use, you can change it in `src/session.js`.
+
 
 ## Images
 
