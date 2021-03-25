@@ -1,0 +1,98 @@
+header {
+  position: fixed;
+  top: 0;
+}
+
+h1 {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(32, 30, 39, 0.8);
+}
+
+h2 {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(171, 123, 230, 0.8);
+}
+
+hr {
+  border-top: 1px solid #e7e7e7;
+}
+
+.no-border {
+  outline: none;
+}
+
+button#sub:active {
+  background-color: rgba(177, 118, 248, 0.7);
+}
+
+button {
+  outline: none !important;
+}
+
+emoji-picker {
+  height: 100;
+  width: 100;
+}
+
+.self {
+  align-self: flex-end;
+  background-color:rgba(177, 118, 248, 0.7);
+}
+
+.remote {
+  align-self: flex-start;
+  background-color: rgb(130, 194, 87);
+}
+
+.message {
+  padding: 7px;
+  margin: 5px;
+  max-width: 66%;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: small;
+  text-align: left;
+  overflow-wrap: normal;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+}
+
+#textbox {
+  position: fixed;
+  bottom: 0px;
+}
+
+.overlay-2 {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.overlay-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.overlay-80 {
+  background-color: rgba(235, 235, 255, 0.8);
+}
+
+.primary {
+  background-color: rgba(187, 134, 252, 0.7);
+}
+
+.secondary {
+  background-color: rgba(3, 218, 196, 0.7);
+}
+
+.background {
+  background-color: whitesmoke;
+}
+
+.foreground {
+  background-color: #343434;
+}
+
+.error {
+  background-color: #CF6679;
+}

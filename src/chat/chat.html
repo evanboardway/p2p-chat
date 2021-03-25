@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>P2P CHAT</title>
+  <link rel="stylesheet" href="chat.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<header class="background h-10 flex flex-row items-center justify-evenly w-full shadow-sm">
+  <h1>P2P CHAT</h1>
+</header>
+
+<body class="background">
+
+  <div id="chat-wrapper" class="flex flex-col justify-center items-center">
+    <h1>LOADING</h1>
+  </div>
+
+  <div id="message-wrapper" class="hidden">
+    <div id="messages" class="mb-12 mt-12"></div>
+  </div>
+
+  <div id="textbox" class="hidden overlay-80 w-full shadow-lg overlay-10">
+    <emoji-picker id="emoji-picker" class="hidden"></emoji-picker>
+    <hr>
+    <div class="flex flex-row">
+      <button id="emoji-button" class="px-2 text-xl align-middle text-center">&#128526;</button>
+      <form id="message-form" class="flex flex-row flex-grow justify-between p-2">
+        <input type="text" name="raw-message" id="text-input"
+          class="no-border overlay-20 flex flex-grow text-gray-500 px-2 rounded-full" />
+        <button type="submit"
+          class="primary rounded-full px-3 py-1 mx-1 shadow-md flex flex-row items-center justify-evenly" id="sub"><img
+            src="../assets/send.png" class="h-5 w-5" />
+          <h2>SEND</h2>
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+<script src="./chat.js"></script>
+
+</html>
