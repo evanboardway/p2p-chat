@@ -29,11 +29,6 @@ button {
   outline: none !important;
 }
 
-emoji-picker {
-  height: 100;
-  width: 100;
-}
-
 .self {
   align-self: flex-end;
   background-color:rgba(177, 118, 248, 0.7);

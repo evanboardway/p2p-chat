@@ -1,6 +1,6 @@
 const { ipcRenderer } = require('electron');
 window.$ = window.jQuery = require('jquery');
-
+const d = require('emoji-picker-element');
 
 const chatWrapper = document.getElementById('chat-wrapper');
 const messageWrapper = document.getElementById('message-wrapper');
